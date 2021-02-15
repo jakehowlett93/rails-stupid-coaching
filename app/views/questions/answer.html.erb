@@ -1,4 +1,13 @@
-<h2>You asked:</h2>
-<h3><%= @question %></h3>
-<h2>Coach says:</h2>
-<h3><%= @answer %></h3>
+<div class="center">
+  <div class="left-border padding">
+    <h2>You asked:</h2>
+    <h3>- <em><%= @question %></em></h3>
+  </div>
+  <br>
+  <div class="left-border padding" id="coach">
+    <h2>Coach says:</h2>
+    <h3>- <em><%= @answer %></em></h3>
+  </div>
+  <br>
+  <%= link_to  "Ask another question", ask_path %>
+</div>
